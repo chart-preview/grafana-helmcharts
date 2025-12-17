@@ -887,6 +887,10 @@ grafana.ini:
     url: https://grafana.net
   server:
     domain: "{{ if (and .Values.ingress.enabled .Values.ingress.hosts) }}{{ tpl (.Values.ingress.hosts | first) . }}{{ else }}''{{ end }}"
+  branding:
+     app_title: "Chart Preview Demo - Grafana"
+     login_title: "Welcome to Chart Preview Demo"
+     login_subtitle: "Deployed via Chart Preview"
 ## grafana Authentication can be enabled with the following values on grafana.ini
  # server:
       # The full public facing url you use in browser, used for redirects and emails
