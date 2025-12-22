@@ -24,7 +24,7 @@ jobs:
               },
               "values": {
                 "rbac": {
-                  "namespaced": true
+                  "create": false
                 },
                 "ingress": {
                   "enabled": true,
